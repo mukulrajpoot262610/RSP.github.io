@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper and Scissor</title>
+</head>
+
+<body>
+    <div class="screen">
+        <nav class="navbar">
+            <h1>Made with 💖 by Mukul Rajpoot</h1>
+        </nav>
+        <div class="welcome-page">
+            <div class="welcome-btn">
+                <h1>😎 Welcome 😎</h1>
+                <button class="btn" id="start-btn">Start Game</button>
+            </div>
+        </div>
+        <div class="rules-page">
+            <div class="rules">
+                <h1>This game contains only one rule and that is First one to Complete 10 Points Win 🙌</h1>
+                <button class="btn" id="next-btn">Next</button>
+            </div>
+        </div>
+        <div class="game-area">
+            <div class="area-1">
+                <h1>🐱‍</h1>
+                <h1 id="player-score">00</h1>
+                <h1 id="player">🐱</h1>
+            </div>
+            <!-- <div class="output-screen">
+                <h1>🆚</h1>
+            </div> -->
+            <div class="area-2">
+                <h1>😈</h1>
+                <h1 id="ai-score">00</h1>
+                <h1 id="ai">😈</h1>
+            </div>
+        </div>
+        <div class="option">
+            <button class="option-btn" id="rock">✊</button>
+            <button class="option-btn" id="paper">🖐️</button>
+            <button class="option-btn" id="scissor">✌️</button>
+        </div>
+        <div class="end-page">
+            <div class="end-btn">
+                <h1 id="winner"></h1>
+                <button class="btn" id="playagain-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
