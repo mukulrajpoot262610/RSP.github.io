@@ -49,8 +49,8 @@ scissor.addEventListener("click", () => {
   winnerScissor();
 });
 
-let pScore = 1;
-let aScore = 1;
+let pScore = 0;
+let aScore = 0;
 
 // --------------------------------- logic part ----------------------------
 function winnerRock() {
@@ -118,31 +118,3 @@ function winnerScissor() {
     }
   }
 }
-
-// if (pScore === 10 || aScore === 10) {
-//   game[0].style.display = "none";
-//   wonPage[0].style.display = "flex";
-//   if (pScore > aScore) {
-//     winner.innerHTML = "You Won 🐱";
-//   } else {
-//     winner.innerHTML = "You Lose 😈";
-//   }
-// }
-
-// // ============================== toggle ==========================/
-// const icons = document.querySelectorAll(".toggle h1");
-// let i = 1;
-
-// setInterval(() => {
-//   i++;
-
-//   const icon = document.querySelector(".toggle .active");
-//   icon.classList.remove("active");
-
-//   if (i > icons.length) {
-//     icons[0].classList.add("active");
-//     i = 1;
-//   } else {
-//     icon.nextElementSibling.classList.add("active");
-//   }
-// }, 1000);
