@@ -6,6 +6,10 @@
   font-family: "Quicksand", sans-serif;
 }
 
+html{
+  font-size: 62.5%;
+}
+
 .screen {
   width: 100%;
   height: 100vh;
@@ -16,8 +20,8 @@
 .navbar {
   background-color: cornsilk;
   text-align: center;
-  padding: 20px 0;
-  margin-bottom: 20px;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .game-area {
@@ -62,18 +66,18 @@
 }
 
 .option-btn {
-  font-size: 150px;
+  font-size: 15rem;
   background: none;
   border-radius: 50%;
-  height: 250px;
-  width: 250px;
+  height: 25rem;
+  width: 25rem;
   border: none;
   transition: transform 0.5s ease;
   cursor: pointer;
 }
 
 .option-btn:hover {
-  transform: translateY(-30px);
+  transform: translateY(-3rem);
 }
 
 .welcome-page {
@@ -85,8 +89,8 @@
 }
 
 .welcome-page h1 {
-  font-size: 150px;
-  margin-bottom: 100px;
+  font-size: 15rem;
+  margin-bottom: 10rem;
   color: cornsilk;
 }
 
@@ -99,30 +103,30 @@
 }
 
 .rules-page h1 {
-  font-size: 50px;
+  font-size: 5rem;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 10rem;
   color: cornsilk;
 }
 
 .btn {
-  padding: 20px 50px;
-  font-size: 50px;
+  padding: 2rem 5rem;
+  font-size: 5rem;
   border: none;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 5rem;
   background-color: cornsilk;
 }
 
 #player {
-  margin-top: 40px;
-  font-size: 200px;
+  margin-top: 4rem;
+  font-size: 20rem;
   transition: all 0.3s ease;
 }
 
 #ai {
-  margin-top: 40px;
-  font-size: 200px;
+  margin-top: 4rem;
+  font-size: 20rem;
   transition: all 0.3s ease;
 }
 
@@ -135,7 +139,48 @@
 }
 
 .end-page h1 {
-  font-size: 150px;
-  margin-bottom: 100px;
+  font-size: 15rem;
+  margin-bottom: 10rem;
   color: cornsilk;
+}
+
+
+/* -------------------------------------- responsive ---------------------------------- */
+
+@media (max-width: 1200px){
+  html{
+    font-size: 40%;
+  }
+
+  .area-1 h1, .area-2 h1{
+    font-size: 10rem;
+  }
+
+  .navbar h1{
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px){
+  html{
+    font-size: 18%;
+  }
+
+  .area-1 h1, .area-2 h1{
+    font-size: 10rem;
+  }
+
+  .navbar h1{
+    font-size: 5rem;
+  }
+
+  #player{
+    margin-top: 20rem;
+    font-size: 50rem;
+  }
+
+  #ai{
+    margin-top: 20rem;
+    font-size: 50rem;
+  }
 }
