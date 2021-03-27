@@ -58,10 +58,10 @@ function winnerRock() {
     ai.innerHTML = "✊";
   } else if (aiOption === 1) {
     ai.innerHTML = "🖐️";
-    aiScore.innerHTML = aScore++;
+    aiScore.innerHTML = ++aScore;
   } else if (aiOption === 2) {
     ai.innerHTML = "✌️";
-    playerScore.innerHTML = pScore++;
+    playerScore.innerHTML = ++pScore;
   }
   if (pScore === 10 || aScore === 10) {
     game[0].style.display = "none";
@@ -78,12 +78,12 @@ function winnerRock() {
 function winnerPaper() {
   if (aiOption === 0) {
     ai.innerHTML = "✊";
-    playerScore.innerHTML = pScore++;
+    playerScore.innerHTML = ++pScore;
   } else if (aiOption === 1) {
     ai.innerHTML = "🖐️";
   } else if (aiOption === 2) {
     ai.innerHTML = "✌️";
-    aiScore.innerHTML = aScore++;
+    aiScore.innerHTML = ++aScore;
   }
   if (pScore === 10 || aScore === 10) {
     option[0].style.display = "none";
@@ -100,10 +100,10 @@ function winnerPaper() {
 function winnerScissor() {
   if (aiOption === 0) {
     ai.innerHTML = "✊";
-    aiScore.innerHTML = aScore++;
+    aiScore.innerHTML = ++aScore;
   } else if (aiOption === 1) {
     ai.innerHTML = "🖐️";
-    playerScore.innerHTML = pScore++;
+    playerScore.innerHTML = ++pScore;
   } else if (aiOption === 2) {
     ai.innerHTML = "✌️";
   }
@@ -118,3 +118,31 @@ function winnerScissor() {
     }
   }
 }
+
+// if (pScore === 10 || aScore === 10) {
+//   game[0].style.display = "none";
+//   wonPage[0].style.display = "flex";
+//   if (pScore > aScore) {
+//     winner.innerHTML = "You Won 🐱";
+//   } else {
+//     winner.innerHTML = "You Lose 😈";
+//   }
+// }
+
+// // ============================== toggle ==========================/
+// const icons = document.querySelectorAll(".toggle h1");
+// let i = 1;
+
+// setInterval(() => {
+//   i++;
+
+//   const icon = document.querySelector(".toggle .active");
+//   icon.classList.remove("active");
+
+//   if (i > icons.length) {
+//     icons[0].classList.add("active");
+//     i = 1;
+//   } else {
+//     icon.nextElementSibling.classList.add("active");
+//   }
+// }, 1000);
